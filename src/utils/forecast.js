@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions}, It is currently ${body.current.temperature} degrees fahrenheit out, the humidity is ${body.current.humidity} RH. Local time  is ${body.current.wind_speed}`
+        `${body.current.weather_descriptions}, It is currently ${body.current.temperature} degrees fahrenheit out, the humidity is ${body.current.humidity} RH. Wind speed is ${body.current.wind_speed}`
       );
     }
   });
